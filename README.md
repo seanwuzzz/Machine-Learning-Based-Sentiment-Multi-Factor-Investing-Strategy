@@ -7,6 +7,12 @@
 - Rebalancing: Multi-channel rebalancing
 - Evaluation: IC, Sharpe ratio, CAGR, turnover
 
+Financial news texts are encoded using BERT to generate semantic embeddings, which are subsequently processed by SVM and k-Nearest Neighbors models for sentiment classification.
+
+The inferred sentiment factors are integrated with proprietary financial and market-based factors through an XGBoost-based factor combination framework.
+
+The resulting composite signals are employed to construct a multi-factor trading strategy targeting Taiwan listed and OTC stocks.
+
 ### Disclaimer
 This project is for educational and informational purposes only and does not constitute financial advice. All data used, including that from TEJ, Yahoo Finance, is publicly available and used in accordance with their respective terms of service.
 
